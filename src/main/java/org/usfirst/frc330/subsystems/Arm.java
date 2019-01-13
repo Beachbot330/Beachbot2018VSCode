@@ -323,8 +323,8 @@ public class Arm extends Subsystem {
     	return (int)(degrees * ArmConst.ticksPerEncoderRev * ArmConst.gearRatio / 360.0);
     }
     
-    private double ticksToDegrees(int ticks) {
-    	return ((double)ticks * 360.0 / (double)ArmConst.ticksPerEncoderRev / ArmConst.gearRatio);
+    private double ticksToDegrees(double ticks) {
+    	return (ticks * 360.0 / (double)ArmConst.ticksPerEncoderRev / ArmConst.gearRatio);
     }
 	    
     public void calibrateMove() {
