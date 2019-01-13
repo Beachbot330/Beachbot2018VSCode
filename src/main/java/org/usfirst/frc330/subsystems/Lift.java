@@ -318,7 +318,7 @@ public class Lift extends Subsystem {
     //------------------------------------------------------------------------------
     // Support Methods
     //------------------------------------------------------------------------------
-    private double ticksToInches(int ticks) {
+    private double ticksToInches(double ticks) {
     	return ((double)ticks / (double)LiftConst.ticksPerRev * LiftConst.inchesPerRev);
     }
     
