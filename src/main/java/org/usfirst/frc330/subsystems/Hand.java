@@ -332,7 +332,7 @@ public class Hand extends Subsystem {
     	return (int)(degrees/360.0 * HandConst.ticksPerEncoderRev * HandConst.gearRatio);
     }
     
-    private double ticksToDegrees(int ticks) {
+    private double ticksToDegrees(double ticks) {
     	return (ticks * 360.0 / HandConst.ticksPerEncoderRev / HandConst.gearRatio);
     }
 
