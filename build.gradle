@@ -1,6 +1,6 @@
 plugins {
     id "java"
-    id "edu.wpi.first.GradleRIO" version "2019.1.1"
+    id "edu.wpi.first.GradleRIO" version "2019.2.1"
 }
 
 def ROBOT_MAIN_CLASS = "org.usfirst.frc330.Main"
@@ -50,7 +50,7 @@ dependencies {
     compile wpi.deps.vendor.java()
     nativeZip wpi.deps.vendor.jni(wpi.platforms.roborio)
     nativeDesktopZip wpi.deps.vendor.jni(wpi.platforms.desktop)
-    implementation 'com.github.Beachbot330:BeachbotLib:2019.0.1'
+    compile 'com.github.Beachbot330:BeachbotLib:2019.0.1'
     testCompile 'junit:junit:4.12'
 }
 
